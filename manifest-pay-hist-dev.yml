@@ -1,0 +1,10 @@
+---
+applications:
+- name: phpmyadmin-pay-hist
+  memory: 128M 
+  instances: 1
+  host: phpmyadmin-pay-hist-dev
+  domain: pcf1.fe.gopivotal.com
+  path: .
+  services:
+    - payment-history-service-db

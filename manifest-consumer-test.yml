@@ -1,0 +1,10 @@
+---
+applications:
+- name: phpmyadmin-consumer
+  memory: 128M
+  instances: 1
+  host: phpmyadmin-consumer-test
+  domain: pcf1.fe.gopivotal.com
+  path: .
+  services:
+    - consumer-messaging-db
